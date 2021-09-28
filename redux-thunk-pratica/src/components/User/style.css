@@ -1,9 +1,28 @@
 .container{
     display: flex;
     flex-direction: column;
+    height: 500px;
+    border: 3px solid #808fad;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+}
+.container img{
+    max-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user-Profile{
+    display: flex;
     
 }
-
+.user-Profile p{
+    margin: 0px;
+}
+.comments-container{
+    height: 80%;
+    overflow: auto;
+}
 .comments-container p{
     text-align: left;
     margin: 4px;
@@ -15,8 +34,17 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
 .action-container{
     display: flex;
+    justify-content: center;
     width: 100%;
-    padding: 20px;
+    padding: 10px 0px;
+
+}
+
+@media screen and (min-width:768px) {
+    .container{
+        width: 500px;
+    }
 }
